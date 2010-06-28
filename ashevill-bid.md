@@ -52,7 +52,7 @@ events and grants.
 
 ## Sponsorships
 
-At this time we have not identified any Ashville Local companies to
+At this time we have not identified any Asheville Local companies to
 reach out to for sponsorship. Asheville however is a growing technical
 community and upon acceptance of the bid we will be researching and
 reaching out to companies in the local community as part of the
