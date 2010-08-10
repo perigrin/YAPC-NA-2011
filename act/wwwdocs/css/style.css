@@ -48,7 +48,7 @@ body {
     box-shadow: 6px 6px 3px #333;
     -moz-box-shadow: 6px 6px 3px #333;
 }
-.header {
+.masthead {
     background-image: url('../img/masthead-mockup.jpg');
     background-repeat: no-repeat;
     width: 100%;

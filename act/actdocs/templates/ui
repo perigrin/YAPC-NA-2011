@@ -43,7 +43,7 @@
 </head>
 
 <body>
-    <div class="header">&nbsp;</div>
+    <div class="masthead">&nbsp;</div>
     <div class="content">
         <div class="unit size2of3 sweet-justice">[% content %]</div>
         <div class="menu unit size1of3 lastUnit">[% PROCESS menu %]</div>
