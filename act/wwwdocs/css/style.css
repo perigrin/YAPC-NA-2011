@@ -79,9 +79,9 @@ body {
     height:auto!important;
     height:200%;
 
-    -webkit-box-shadow: 6px 6px 3px #333;
-    box-shadow: 6px 6px 3px #333;
-    -moz-box-shadow: 6px 6px 3px #333;
+    -webkit-box-shadow: rgba(51, 51, 51, 0.9) 0px 0px 10px;
+    box-shadow: rgba(51, 51, 51, 0.9) 0px 0px 10px;
+    -moz-box-shadow: rgba(51, 51, 51, 0.9) 0px 0px 10px;
 }
 .masthead {
     background-image: url('../img/masthead-mockup.jpg');
