@@ -1,22 +1,16 @@
 [% PROCESS menus/user %]
 
-<h2> Conference </h2>
-<li> <a href="sponsorship.html">Call for Sponsors</a></li>
-<li> <a href="call_for_speakers.html">Call for Speakers</a></li>
-<li> <a href="bof.html">Call for BoFs</a> </li>
-<li> <a href="venue.html">Venue</a></li>
-<li> <a href="news">News</a> </li>
-<li> <a href="wiki">Wiki</a> </li>
-
+[% PROCESS menus/conference %]
 [% PROCESS menus/users %]
 [% PROCESS menus/talks %]
 [% PROCESS menus/events %]
 [% PROCESS menus/treasurer %]
 [% PROCESS menus/admin %]
+[% PROCESS  menus/sponsors %]
 [% PROCESS menus/act_confs %]
 
 <div class="footer"> 
-<p style="font-size: 8pt; font-weight: 400;"> 
+<p> 
     <a href="colophon.html">Colophon</a><br/>
     Site Design by <a href="http://tamarou.com">Tamarou</a> &bull; Image by <a rel="cc:attributionURL" href="http://www.flickr.com/photos/lhutton/4743800369/">Leander Hutton</a> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a> 
     &bull; Copyright &copy; <a href="http://dahut.pm.org">Dahut.pm</a> &bull; Powered by <a href="http://act.mongueurs.net/">Act</a>
