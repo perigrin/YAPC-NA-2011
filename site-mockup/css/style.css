@@ -2,7 +2,7 @@
 @font-face { font-family: 'Gentium'; src: url('genr102-webfont.eot'); src: local('☺'), url('genr102-webfont.woff') format('woff'), url('genr102-webfont.ttf') format('truetype'), url('genr102-webfont.svg#webfont0F9K2oKK') format('svg'); font-weight: normal; font-style: normal; }
 @font-face{font-family:'GentiumAlt';src:url('genar102-webfont.eot');src:local('☺'),url('genar102-webfont.woff') format('woff'),url('genar102-webfont.ttf') format('truetype'),url('genar102-webfont.svg#webfontroMlCohy') format('svg');font-weight:normal;font-style:normal;}
 
-@media screen and (max-width: 319px) {.unit{float: none !important; width: auto !important;}}
+@media screen and (max-width: 319px) { .unit{float: none !important; width: auto !important;} }
 .line:after,.lastUnit:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
 .line{*zoom:1;}
 .unit{float:left;}
@@ -24,22 +24,27 @@ html {
     background-color: #4B4B5C;
     color: #FFD37F;
     overflow: auto;
+    width: 100%;
+    width:auto!important;
+    min-width: 100%;
     min-height:100%;
     height:auto!important;
     height:100%;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 body {
     font-size: 12pt;
+    margin: 0px;
+    padding: 0px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
-    padding: 0;
     background-color: #2E281C;
     width: 1024px;
-    overflow: auto;
-
+    overflow-y: auto;
+    overflow-x: visible;    
     min-height:200%;
     height:auto!important;
     height:200%;
@@ -51,20 +56,20 @@ body {
 .masthead {
     font-family: "Gentium", serif;
     color: white;
-    background-image: url('../masthead-mockup.jpg');
+    background-image: url('../img/masthead-mockup.jpg');
     background-repeat: no-repeat;
-    width: 100%;
+    width: 1024px;
     height: 335px;
+    display: table-cell;
+    vertical-align: bottom;    
     border-bottom: 1px solid #FFD37F;
 }
-h1 {
-    display: table-cell;
-    vertical-align: bottom;
+h1 { 
     font-size: 40pt;
     opacity: 0.7;
-    height: 335px;
     padding: 0px;
     padding-left: 5px;
+    margin: 0px;
 }
 
 h1 a, h1 a:visited { 
@@ -72,7 +77,7 @@ h1 a, h1 a:visited {
     text-decoration: none;
 }
 
-.content { clear: both;}
+.body { clear: both;}
 
 h2 {
     font-family: "RalewayThin",sans-serif;
@@ -114,18 +119,22 @@ a:hover {
     color: #787220;
     text-decoration: underline;
 }
-.unit {
-    padding-left: 3%;
-    padding-right: 3%;
-}
+
 h2 a {
     color: #FFD37F;
 }
+
+.content { padding-left: 3%; }
+
 .menu {
-    width: 30ex;
+    padding-left: 6ex;
+    padding-right: 1ex;
 }
 
+.act_confs h2 a { font-size: 90%; }
+
 li {
+    display: block;
     margin: 0px 0px 1ex 0px;
     list-style: none;
 }
