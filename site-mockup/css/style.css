@@ -56,7 +56,7 @@ body {
 .masthead {
     font-family: "Gentium", serif;
     color: white;
-    background-image: url('../img/masthead-mockup.jpg');
+    background-image: url('../masthead-mockup.jpg');
     background-repeat: no-repeat;
     width: 1024px;
     height: 335px;
