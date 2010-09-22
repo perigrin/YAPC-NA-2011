@@ -44,9 +44,9 @@
 
 <body>
     <div class="masthead"><h1><a href="[% global.reqeust.base_url %][% make_uri('') %]">YAPC::NA 2011 &bull; Asheville, NC</a></h1></div>
-    <div class="content">
-        <div class="unit size2of3 sweet-justice">[% content %]</div>
-        <div class="menu unit size1of3 lastUnit">[% PROCESS menu %]</div>
+    <div class="body">
+        <div class="unit size2of3 sweet-justice"><div class="content">[% content %]</div></div>
+        <div class="menu unit lastUnit">[% PROCESS menu %]</div>
     </div>
 </body>
 </html>
