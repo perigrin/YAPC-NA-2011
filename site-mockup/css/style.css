@@ -16,7 +16,7 @@
 .size2of5{width:40%;}
 .size3of5{width:60%;}
 .size4of5{width:80%;}
-.lastUnit{display:table-cell;float:none;width:auto;*display:block;*zoom:1;_position:relative;_left:-3px;_margin-right:-3px;}
+.lastUnit{display:table-cell;float:none;width:auto;*display:block;*zoom:1;_left:-3px;_margin-right:-3px;}
 
 /* ***** main styles ******** */
 html {
