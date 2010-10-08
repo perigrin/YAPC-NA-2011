@@ -5,17 +5,17 @@
 
 ## T-shirts, lanyards
 
-* Advantage Printing - paper inside the lanyards
+__Advantage Printing__ - paper inside the lanyards
 
-  438 Haywood Rd, Asheville, NC 28806-4263
-  (828) 252-7667
+    438 Haywood Rd, Asheville, NC 28806-4263
+    (828) 252-7667
 
-  Right next door to Image 420. 350 print run 2-sided is cheapest for single color (black).
-  If color then it's "a digital run" which is the same amount no matter how many colors.
-  They're emailing me an estimate.
+Right next door to Image 420. 350 print run 2-sided is cheapest for single color (black).
+If color then it's "a digital run" which is the same amount no matter how many colors.
+They're emailing me an estimate.
 
-* Blue Ridge Printing - NO, they're a large-format print shop (books, etc)
-* Image 420 - screen printing (t-shirts, the lanyards themselves)
+__Blue Ridge Printing__ - NO, they're a large-format print shop (books, etc)
+__Image 420__ - screen printing (t-shirts, the lanyards themselves)
 
     420 Haywood Rd, Asheville, NC 28806-4260
     (828) 253-9440
