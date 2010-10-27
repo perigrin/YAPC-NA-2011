@@ -5,7 +5,8 @@
 
 ## T-shirts
 
-* ~250 of [these](http://skitch.com/trg404/d7x8w/shirt.psd-25-layer-1-cmyk-8)
+* ~250 of [these](http://skitch.com/trg404/d7x8w/shirt.psd-25-layer-1-cmyk-8) 
+or maybe [these](http://skitch.com/trg404/d7tpy/shirt.psd-25-onionworld-cmyk-8) (fewer colors)
 * ~20 of [these](http://skitch.com/trg404/d7xe3/yapc2011staffshirt.ai-100-cmyk-preview)
 
 I've got an email out to joshua(dot)mcadams(at)gmail(dot)com asking for the quantities of sizes
