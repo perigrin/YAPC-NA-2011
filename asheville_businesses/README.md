@@ -5,6 +5,13 @@
 
 ## T-shirts, lanyards
 
+Shirts: 
+* ~250 of [these](http://skitch.com/trg404/d7x8w/shirt.psd-25-layer-1-cmyk-8)
+* ~20 of [these](http://skitch.com/trg404/d7xe3/yapc2011staffshirt.ai-100-cmyk-preview)
+
+I've got an email out to joshua(dot)mcadams(at)gmail(dot)com asking for the quantities of sizes
+we ended up with for YAPC::NA::2010 as a guideline for getting quotes. --jhannah 20101027
+
 __Advantage Printing__ - paper inside the lanyards
 
     438 Haywood Rd, Asheville, NC 28806-4263
