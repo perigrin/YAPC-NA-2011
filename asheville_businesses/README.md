@@ -45,11 +45,10 @@ They said they'd email me an estimate.  --jhannah 20101008
 
 ## Schedules
 
-No hard copy schedules. Sponsors are being sold "advertising spots" that don't mention
-physical paper.  --jhannah 20101027 per perigrin
+No hard copy entire-conference schedules. Sponsors are being sold "advertising spots" that 
+don't mention physical paper.  --jhannah 20101027 per perigrin
 
 Each room will have the schedule for the day printed in a plastic plackard each night. 
-See crowne_plaza/README.md for details.
-
+See crowne_plaza/README.md "Schedules" for details.
 
 
