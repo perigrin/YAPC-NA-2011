@@ -9,9 +9,6 @@
 or maybe [these](http://skitch.com/trg404/d7tpy/shirt.psd-25-onionworld-cmyk-8) (fewer colors)
 * ~40 of [these](http://skitch.com/trg404/d7xe3/yapc2011staffshirt.ai-100-cmyk-preview)
 
-I've got an email out to joshua(dot)mcadams(at)gmail(dot)com asking for the quantities of sizes
-we ended up with for YAPC::NA::2010 as a guideline for getting quotes. --jhannah 20101027
-
 __Blue Ridge Printing__ - NO, they're a large-format print shop (books, etc)
 
 __Image 420__ - screen printing (t-shirts, the lanyards themselves)
@@ -20,9 +17,7 @@ __Image 420__ - screen printing (t-shirts, the lanyards themselves)
     (828) 253-9440
     ronda(at)image420(dot)com
 
-In order to quote they need the following information: 
-style of shirt, color(s) of shirt, color(s) of ink, size and # of 
-printing locations (front breast pocket, back full)?
+Estimate request sent to ronda. --jhannah 20101103
 
 If we want them to screenprint on the fabric of the lanyards themselves they need to know: 
 qty, color, imprint color.
