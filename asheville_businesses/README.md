@@ -18,7 +18,7 @@ __Image 420__ - screen printing (t-shirts, the lanyards themselves)
 
     420 Haywood Rd, Asheville, NC 28806-4260
     (828) 253-9440
-    rhonda(at)image420(dot)com
+    ronda(at)image420(dot)com
 
 In order to quote they need the following information: 
 style of shirt, color(s) of shirt, color(s) of ink, size and # of 
