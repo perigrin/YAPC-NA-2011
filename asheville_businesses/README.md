@@ -26,6 +26,8 @@ qty, color, imprint color.
 
 ## Lanyards 
 
+For inspiration, here are some really cool lanyards: http://fontsinuse.com/f8-conference-badges/
+
 Any sponsor providing lanyards, or do we need to buy them? If we're buying them we could
 pay one of the screen printing companies (under t-shirts, above) to print "YAPC::NA::2011" 
 on them if someone designs such a thing.   --jhannah 20101027
