@@ -17,7 +17,7 @@ __Image 420__ - screen printing (t-shirts, the lanyards themselves)
     (828) 253-9440
     ronda(at)image420(dot)com
 
-Estimate request sent to ronda. --jhannah 20101103
+Estimate request sent to Ronda. She said she'd get me numbers by tomorrow.  --jhannah 20110531
 
 If we want them to screenprint on the fabric of the lanyards themselves they need to know: 
 qty, color, imprint color.
