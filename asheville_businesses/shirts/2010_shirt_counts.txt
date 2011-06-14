@@ -1,0 +1,23 @@
+
+YAPC::NA::2010 shirt order (for 2011 ballparking):
+
+t-shirts
+  S  26
+  M  66
+  L 151
+ XL 102
+2XL  32
+3XL  20
+4XL   4
+    402    $2567.82  ($6.39 each)
+
+polo shirts 
+  M   6
+  L   9
+ XL  10
+2XL   3
+3XL   6
+4XL   6
+     40    $810.20  ($20.26 each)
+
+
