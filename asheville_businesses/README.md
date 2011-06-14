@@ -2,6 +2,8 @@
 
     crown_plaza/
        Crowne Plaza Resort, Asheville NC -  the conference venue
+    shirts/
+       Everything there is to know about the attendee and staff shirts.
 
 ## T-shirts
 
@@ -14,9 +16,6 @@ __Image 420__ - screen printing (t-shirts, the lanyards themselves)
     ronda(at)image420(dot)com
 
 Final estimate accepted. See the shirts/ directory for everything. --jhannah 20110614
-
-If we want them to screenprint on the fabric of the lanyards themselves they need to know: 
-qty, color, imprint color.
 
 ## Lanyards 
 
