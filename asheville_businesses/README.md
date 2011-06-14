@@ -5,10 +5,6 @@
 
 ## T-shirts
 
-* ~400 of [these](http://skitch.com/trg404/d7x8w/shirt.psd-25-layer-1-cmyk-8) 
-or maybe [these](http://skitch.com/trg404/d7tpy/shirt.psd-25-onionworld-cmyk-8) (fewer colors)
-* ~40 of [these](http://skitch.com/trg404/d7xe3/yapc2011staffshirt.ai-100-cmyk-preview)
-
 __Blue Ridge Printing__ - NO, they're a large-format print shop (books, etc)
 
 __Image 420__ - screen printing (t-shirts, the lanyards themselves)
@@ -17,20 +13,23 @@ __Image 420__ - screen printing (t-shirts, the lanyards themselves)
     (828) 253-9440
     ronda(at)image420(dot)com
 
-Estimate request sent to Ronda. She said she'd get me numbers by tomorrow.  --jhannah 20110531
+Final estimate accepted. See the shirts/ directory for everything. --jhannah 20110614
 
 If we want them to screenprint on the fabric of the lanyards themselves they need to know: 
 qty, color, imprint color.
-
-10 business days lead time. So deadline: June 10, 2011.
 
 ## Lanyards 
 
 For inspiration, here are some really cool lanyards: http://fontsinuse.com/f8-conference-badges/
 
-Any sponsor providing lanyards, or do we need to buy them? If we're buying them we could
-pay one of the screen printing companies (under t-shirts, above) to print "YAPC::NA::2011" 
-on them if someone designs such a thing.   --jhannah 20101027
+Erica is sending us 350 lanyards. I need to provide the bottom plastic and the paper printouts. --jhannah 20110614
+
+    Erica Gasparini, IT Coordinator
+    Booking.com - online hotel reservations
+    e-mail: erica.gasparini@booking.com
+    phone: +31 (0) 20 715 3033 
+    address: Nieuwe Weteringstraat 36-38, 1017 ZX Amsterdam, The Netherlands
+    website: www.booking.com
 
 __Advantage Printing__ - paper inside the lanyards
 
