@@ -139,13 +139,13 @@ li {
     list-style: none;
 }
 
-.r1, .r2, .r3, .r4, .r5, .r6, .r7, .out {
+.r1, .r2, .r3, .r4, .r5, .r6, .r7, .r8, .out {
     background-color: #989DBF;
     color: #2E281C;
     font-size: 10pt;
 }
 
-.r1 a, .r2 a, .r3 a, .r4 a, .r5 a, .r6 a, .r7 a, .out a {
+.r1 a, .r2 a, .r3 a, .r4 a, .r5 a, .r6 a, .r7 a, .r8 a, .out a {
     color: #2E281C;
 }
 
