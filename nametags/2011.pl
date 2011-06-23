@@ -10,12 +10,12 @@ use constant pt => 1;
 my $main_counter;  # 6 people per page, double-sided
 my ($front_page, $back_page);
 my %offsets = (
-   1 => [ 0.5/in, 8.75/in ],   # x and y offsets
-   2 => [ 4.5/in, 8.75/in ],   # to positions 1-6 on each page
-   3 => [ 0.5/in, 5.75/in ],
-   4 => [ 4.5/in, 5.75/in ],
-   5 => [ 0.5/in, 2.75/in ],
-   6 => [ 4.5/in, 2.75/in ],
+   1 => [ 0.5/in, 8.5/in ],   # x and y offsets
+   2 => [ 4.5/in, 8.5/in ],   # to positions 1-6 on each page
+   3 => [ 0.5/in, 5.5/in ],
+   4 => [ 4.5/in, 5.5/in ],
+   5 => [ 0.5/in, 2.5/in ],
+   6 => [ 4.5/in, 2.5/in ],
 );
 my %backside = (          # Where to put the backs so we can cut a single piece of paper
    1 => 2, 2 => 1, 3 => 4, 4 => 3, 5 => 6, 6 => 5,
@@ -57,33 +57,33 @@ sub add_page {
 
    my $box = $page->gfx;
    $box->rect( 
-      0.25/in, 0.25/in, 8/in, 9/in, 
+      0.25/in, 0/in, 8/in, 9/in, 
    );
    $box->linewidth(1);
    $box->linedash(1,20);
    $box->stroke;
    my $line = $page->gfx;
-   $line->move(0.25/in, 3.25/in);
-   $line->line(8.25/in, 3.25/in);
+   $line->move(0.25/in, 3/in);
+   $line->line(8.25/in, 3/in);
    $line->stroke;
-   $line->move(0.25/in, 6.25/in);
-   $line->line(8.25/in, 6.25/in);
+   $line->move(0.25/in, 6/in);
+   $line->line(8.25/in, 6/in);
    $line->stroke;
-   $line->move(0.25/in, 6.25/in);
-   $line->line(8.25/in, 6.25/in);
+   $line->move(0.25/in, 6/in);
+   $line->line(8.25/in, 6/in);
    $line->stroke;
-   $line->move(4.25/in, 0.25/in);
-   $line->line(4.25/in, 9.25/in);
+   $line->move(4.25/in, 0/in);
+   $line->line(4.25/in, 9/in);
    $line->stroke;
    
    my $EGTransparent = $pdf->egstate();
    my $EGNormal = $pdf->egstate();
-   $EGTransparent->transparency(0.8);
+   $EGTransparent->transparency(0.9);
    $EGNormal->transparency(0);
    
    my $photo = $page->gfx;
    $photo->egstate($EGTransparent);
-   $photo->image( $photo_file, 0.25/in, 0.75/in, 8/in, 8/in );
+   $photo->image( $photo_file, 0.25/in, 0.5/in, 8/in, 8/in );
    $photo->egstate($EGNormal);
 
    return $page;
