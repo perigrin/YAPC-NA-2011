@@ -5,7 +5,9 @@ use PDF::API2;
 use constant mm => 25.4 / 72;
 use constant in => 1 / 72;
 use constant pt => 1;
-
+use Text::CSV;
+# use utf8;
+use Encode;
 
 my $main_counter;  # 6 people per page, double-sided
 my ($front_page, $back_page);
@@ -24,21 +26,24 @@ my %backside = (          # Where to put the backs so we can cut a single piece 
 my $pdf = PDF::API2->new();
 my $photo_file = $pdf->image_png("Perl-onion.png");   # Loading this only once is more efficient
 
-for (1..30) {
+my $csv = Text::CSV->new({ binary => 1 });
+open my $in, "<", "/tmp/export.csv" or die;   # http://www.yapc2011.us/yn2011/export
+<$in>;   # header
+while (my $row = $csv->getline($in)) {
    $main_counter++;
    unless ($main_counter <= 6 && $front_page) {
       $front_page = add_page();
       $back_page =  add_page();
       $main_counter = 1;
    }
-   add_person($front_page, $main_counter,            "Hello There You Great $_");
-   add_person($back_page,  $backside{$main_counter}, "Hello There You Great $_");
+   add_person($front_page, $main_counter,            $row);
+   add_person($back_page,  $backside{$main_counter}, $row);
 }
 $pdf->saveas('new.pdf');
 
 
 sub add_person {
-   my ($page, $position, $name) = @_;
+   my ($page, $position, $p) = @_;  # $p is a person -- a row from export.csv
 
    my ($x, $y) = @{$offsets{$position}};
  
@@ -46,8 +51,7 @@ sub add_person {
    my $text = $page->text();
    $text->font($font, 20);
    $text->translate($x, $y);
-   $text->text($name);
-
+   $text->text(decode('utf-8', $p->[4] . " " . $p->[5]));
 }
 
 
