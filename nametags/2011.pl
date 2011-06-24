@@ -38,6 +38,7 @@ while (my $row = $csv->getline($in)) {
    }
    add_person($front_page, $main_counter,            $row);
    add_person($back_page,  $backside{$main_counter}, $row);
+   # last if ($main_counter == 6);
 }
 $pdf->saveas('new.pdf');
 
@@ -49,9 +50,31 @@ sub add_person {
  
    my $font = $pdf->corefont('Helvetica-Bold');
    my $text = $page->text();
-   $text->font($font, 20);
-   $text->translate($x, $y);
-   $text->text(decode('utf-8', $p->[4] . " " . $p->[5]));
+
+   $text->font($font, 24);
+
+   unless ($p->[7]) {    # pseudonymous
+      $text->translate($x, $y);
+      $text->text(decode('utf-8', $p->[4] . " " . $p->[5]));   # Jay Hannah
+   }
+
+   $text->translate($x, $y - 25);
+   $text->fillcolor('#000066');
+   $text->text(decode('utf-8', $p->[6]));                      # jhannah
+
+   $font = $pdf->corefont('Helvetica');
+   $text->font($font, 17);
+   $text->fillcolor('#000000');
+   $text->translate($x, $y - 45);
+   $text->text(decode('utf-8', substr($p->[10], 0, 32)));      # Omaha.pm
+
+   $text->translate($x, $y - 65);
+   $text->text(decode('utf-8', $p->[17]));                     # Infinity Interactive
+
+   $text->font($font, 17);
+   $text->translate($x, $y - 160);
+   $text->text(decode('utf-8', 'YAPC::NA::2011    Asheville, NC'));
+
 }
 
 
