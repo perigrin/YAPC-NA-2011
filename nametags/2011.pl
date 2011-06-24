@@ -69,7 +69,7 @@ sub add_person {
    $text->text(decode('utf-8', substr($p->[10], 0, 32)));      # Omaha.pm
 
    $text->translate($x, $y - 65);
-   $text->text(decode('utf-8', $p->[17]));                     # Infinity Interactive
+   $text->text(decode('utf-8', substr($p->[17], 0, 32)));      # Infinity Interactive
 
    $text->font($font, 17);
    $text->translate($x, $y - 160);
@@ -82,6 +82,7 @@ sub add_page {
    my $page = $pdf->page();
    $page->mediabox('Letter');
 
+   # Dotted lines for cutting the two-sided paper
    my $box = $page->gfx;
    $box->rect( 
       0.25/in, 0/in, 8/in, 9/in, 
@@ -102,17 +103,28 @@ sub add_page {
    $line->move(4.25/in, 0/in);
    $line->line(4.25/in, 9/in);
    $line->stroke;
-   
-   my $EGTransparent = $pdf->egstate();
+ 
+   # Prep a transparency state 
+   my $EGTransparent1 = $pdf->egstate();
+   my $EGTransparent2 = $pdf->egstate();
    my $EGNormal = $pdf->egstate();
-   $EGTransparent->transparency(0.9);
+   $EGTransparent1->transparency(0.9);
+   $EGTransparent2->transparency(0.5);
    $EGNormal->transparency(0);
    
+   # Big onion watermark across the whole sheet 
    my $photo = $page->gfx;
-   $photo->egstate($EGTransparent);
+   $photo->egstate($EGTransparent1);
    $photo->image( $photo_file, 0.25/in, 0.5/in, 8/in, 8/in );
-   $photo->egstate($EGNormal);
 
+   # Small onion on each badge
+   $photo->egstate($EGTransparent2);
+   foreach my $position (keys %offsets) {
+      my ($x, $y) = @{$offsets{$position}};
+      $photo->image( $photo_file, $x + 2.5/in, $y - 2/in, 1/in, 1/in );
+   }
+
+   $photo->egstate($EGNormal);
    return $page;
 }
 
