@@ -47,6 +47,7 @@ sub add_person {
    my ($page, $position, $p) = @_;  # $p is a person -- a row from export.csv
 
    my ($x, $y) = @{$offsets{$position}};
+   my $my_y = $y;   # Relative to this person, so we don't leave blank spots
  
    my $font = $pdf->corefont('Helvetica-Bold');
    my $text = $page->text();
@@ -54,21 +55,30 @@ sub add_person {
    $text->font($font, 24);
 
    unless ($p->[7]) {    # pseudonymous
-      $text->translate($x, $y);
+      $text->translate($x, $my_y);
       $text->text(decode('utf-8', $p->[4] . " " . $p->[5]));   # Jay Hannah
+      $my_y -= 25;
    }
 
-   $text->translate($x, $y - 25);
-   $text->fillcolor('#000066');
-   $text->text(decode('utf-8', $p->[6]));                      # jhannah
+   if ($p->[6]) {
+      $text->translate($x, $my_y);
+      $text->fillcolor('#000066');
+      $text->text(decode('utf-8', $p->[6]));                      # jhannah
+      $text->fillcolor('#000000');
+      $my_y -= 25;
+   }
+
+   if ($p->[10]) {
+      $font = $pdf->corefont('Helvetica');
+      $text->font($font, 17);
+      $text->translate($x, $my_y);
+      $text->text(decode('utf-8', substr($p->[10], 0, 32)));      # Omaha.pm
+      $my_y -= 20;
+   }
 
    $font = $pdf->corefont('Helvetica');
    $text->font($font, 17);
-   $text->fillcolor('#000000');
-   $text->translate($x, $y - 45);
-   $text->text(decode('utf-8', substr($p->[10], 0, 32)));      # Omaha.pm
-
-   $text->translate($x, $y - 65);
+   $text->translate($x, $my_y);
    $text->text(decode('utf-8', substr($p->[17], 0, 32)));      # Infinity Interactive
 
    $text->font($font, 17);
